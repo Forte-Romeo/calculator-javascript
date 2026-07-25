@@ -59,3 +59,85 @@ body {
     font-size:3rem;
     font-weight:600;
 }
+
+/* ===== BUTTON GRID ===== */
+.buttons {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    padding:20px;
+}
+
+/* ===== GENERAL BUTTONS ===== */
+.btn {
+    border:none;
+    outline:none;
+    height:72px;
+    border-radius:18px;
+    cursor:pointer;
+    font-size:1.3rem;
+    font-weight:600;
+    font-family:inherit;
+    transition:.2s ease;
+    user-select:none;
+}
+
+.btn:hover {
+    transform:translateY(-2px);
+}
+
+.btn:active {
+    transform:scale(.96);
+}
+
+/* ===== NUMBER BUTTONS ===== */
+.number {
+    background:#1f2937;
+    color:white;
+}
+
+.number:hover {
+    background:#2d3748;
+}
+
+/* =====  OPERATOR BUTTONS ===== */
+.operator {
+    background:#2563eb;
+    color:white;
+}
+
+.operator:hover {
+    background:#1d4ed8;
+}
+
+/* ===== FUNCTION BUTTONS ===== */
+.function {
+    background:#475569;
+    color:white;
+}
+
+.function:hover {
+    background:#64748b;
+}
+
+/* ===== EQUAL BUTTON===== */
+.equals {
+    background:#22c55e;
+    color:white;
+}
+
+.equals:hover {
+    background:#16a34a;
+}
+
+/* ===== ZERO BUTTON ===== */
+.zero {
+    grid-column:span 2;
+}
+
+/* ===== BUTTON SHADOW ====== */
+.btn {
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.05),
+        0 4px 10px rgba(0,0,0,.25);
+}
